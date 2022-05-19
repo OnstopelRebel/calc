@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OverCalc</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="nouislider/nouislider.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="layout-block">
+
+        <form action="#" class="calc-form">
+            <fieldset class="calc-form__fieldset">
+                <label class="calc-form__label calc-form__label--salary">
+                    <span class="calc-form__span calc-form__span--salary">Оклад</span>
+                    <input class="calc-form__input calc-form__input--salary input-number" type="number" value="30000" min="0" required>
+                    <div class="calc-form__slider salary-slider"></div>
+                </label>
+                <label class="calc-form__label calc-form__label--hours">
+                    <span class="calc-form__span calc-form__span--hours">Кол-во часов</span>
+                    <input class="calc-form__input calc-form__input--hours input-number" type="number" min="1" max="14" value="8" required>
+                  <div class="calc-form__slider time-slider"></div>
+                </label>
+                <label class="calc-form__label calc-form__label--month">
+                    <span class="calc-form__span calc-form__span--month">Месяц</span>
+                      <div class="calc-form__select-container">
+                        <select class="calc-form__month">
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель</option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябрь</option>
+                            <option value="10">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="12">Декабрь</option>
+                        </select>
+                      </div>
+                </label>
+                <label class="calc-form__label night-check">
+                    <span class="calc-form__span">Ночь</span>
+                    <input class="visually-hidden night-check__input" type="checkbox">
+                    <span class="night-check__control-mark"></span>
+                </label>
+            </fieldset>
+            <button class="calc-form__button" type="button">рассчитать</button>
+        </form>
+    </div>
+    <div class="popup">
+      <div class="result-block">
+        <div class="result-block__cost">
+          0000.00 ₽
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" type="module"></script>
+    <script src="nouislider/nouislider.js"></script>
+</body>
+</html>

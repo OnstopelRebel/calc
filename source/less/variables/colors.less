@@ -1,0 +1,23 @@
+
+/*----- Основные цвета -----*/
+
+@base-color: rgb(173, 208, 199);
+@popup-color: spin(@base-color, 60);
+@error-color: spin(@base-color, 20);
+@info-color: #9ec5b4;
+@warning-color: spin(@base-color, 120);
+@success-color: spin(@base-color, -120);
+@bodyBackground: beige;
+@gradient: linear-gradient(to right, rgba(173,209,199, 1), rgba(173,209,199, 0.6));
+
+.noUi-connect {
+  background: @base-color !important;
+}
+
+.noUi-connects {
+  background: fadeout(@base-color, 50%);
+}
+
+.noUi-touch-area {
+  background: @bodyBackground;
+}
